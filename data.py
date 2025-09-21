@@ -1,29 +1,32 @@
 import random
 import string
+
+BASE_URL = 'https://qa-scooter.praktikum-services.ru/api/v1'
+
 class AcceptOrder:
-    Url_accept_order_1 =     'https://qa-scooter.praktikum-services.ru/api/v1/orders/accept/145?courierId=585596'
-    Url_accept_order_2 =     'https://qa-scooter.praktikum-services.ru/api/v1/orders/accept/386594?courierId=123'
-    Url_accept_order_3 =     'https://qa-scooter.praktikum-services.ru/api/v1/orders/accept/1149?courierId=12'
-    Url_accept_order_4 =     'https://qa-scooter.praktikum-services.ru/api/v1/orders/accept/386594?courierId'
-    Url_accept_order_5 =     'https://qa-scooter.praktikum-services.ru/api/v1/orders/track?t=343249'
-    create_an_order_1 =      'https://qa-scooter.praktikum-services.ru/api/v1/orders'
-    can_be_created_courier = 'https://qa-scooter.praktikum-services.ru/api/v1/courier'
-    order_not_found_1 =      'https://qa-scooter.praktikum-services.ru/api/v1/orders/track?t=1'
-    order_not_found_2 =      'https://qa-scooter.praktikum-services.ru/api/v1/orders/track?t='
-    order_not_found_3 =      'https://qa-scooter.praktikum-services.ru/api/v1/orders/track?t=343249'
-    list_of_orders =         'https://qa-scooter.praktikum-services.ru/api/v1/orders?courierId=585593'
-    remove_courier_1 =       'https://qa-scooter.praktikum-services.ru/api/v1/courier/1'
-    remove_courier_2 =       'https://qa-scooter.praktikum-services.ru/api/v1/courier/'
-    remove_courier_3 =       'https://qa-scooter.praktikum-services.ru/api/v1/courier/585595'
-    сourier_login =          'https://qa-scooter.praktikum-services.ru/api/v1/courier/login'
+    Url_accept_order_1 =     f'{BASE_URL}/orders/accept/145?courierId=585596'
+    Url_accept_order_2 =     f'{BASE_URL}/orders/accept/386594?courierId=123'
+    Url_accept_order_3 =     f'{BASE_URL}/orders/accept/1149?courierId=12'
+    Url_accept_order_4 =     f'{BASE_URL}/orders/accept/386594?courierId'
+    Url_accept_order_5 =     f'{BASE_URL}/orders/track?t=343249'
+    create_an_order_1 =      f'{BASE_URL}/orders'
+    can_be_created_courier = f'{BASE_URL}/courier'
+    order_not_found_1 =      f'{BASE_URL}/orders/track?t=1'
+    order_not_found_2 =      f'{BASE_URL}/orders/track?t='
+    order_not_found_3 =      f'{BASE_URL}/orders/track?t=343249'
+    list_of_orders =         f'{BASE_URL}/orders?courierId=585593'
+    remove_courier_1 =       f'{BASE_URL}/courier/1'
+    remove_courier_2 =       f'{BASE_URL}/courier/'
+    remove_courier_3 =       f'{BASE_URL}/courier/585595'
+    сourier_login =          f'{BASE_URL}/courier/login'
 
 class TextOfMistake:
-    errer_1 = 'Заказа с таким id не существует'
-    errer_2 = 'Курьера с таким id не существует'
-    errer_3 = 'Недостаточно данных для поиска'
-    errer_4 = 'Недостаточно данных для создания учетной записи'
-    errer_5 = "Заказ не найден"
-    errer_6 = 'Учетная запись не найдена'
+    error_1 = 'Заказа с таким id не существует'
+    error_2 = 'Курьера с таким id не существует'
+    error_3 = 'Недостаточно данных для поиска'
+    error_4 = 'Недостаточно данных для создания учетной записи'
+    error_5 = "Заказ не найден"
+    error_6 = 'Учетная запись не найдена'
 
 class DataForTheTest:
     payload = {
